@@ -1,12 +1,22 @@
 
-<?php
-class SystemComponent{
-	private $settings;
-	function getSetting(){
-			$settings['dbusername']='root';
-			$settings['dbpassword']='root'; 
-			$settings['dbname']='faucet2';
-			$settings['dbhost']='localhost';
-			return $settings;
-	}
-}
+<?php
+
+class SystemComponent{
+
+	private $settings;
+
+	function getSetting(){
+
+			$settings['dbusername']='cesardanielhg';
+
+			$settings['dbpassword']='super00co1n'; 
+
+			$settings['dbname']='faucet2';
+
+			$settings['dbhost']='localhost';
+
+			return $settings;
+
+	}
+
+}
