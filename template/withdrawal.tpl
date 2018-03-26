@@ -1,98 +1,128 @@
 {include file='template/header.tpl'}
-<div id="blue"><div class="container"><div class="row"><h3>Ask for Withdraw</h3></div><!-- /row -->	    </div> <!-- /container -->	</div>
 
 
 
-<div class="panel panel-default">
-<div class="panel-heading"><h3 class="panel-title">Withdrawal
+<!-- ///// Start Banner Section Gradient //// -->
+  <div class="container-fluid py-5">
+        <div class="row gradient-bg">
+          
+          
+          <div class="col-lg-8 text-center text-light mx-auto ">
+
+            <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
+                <h1 class="text-light">
+                  Withdrawal!
+              </h1>
+                <p>
+                  Ask for Withdraw              
+                </p>
+                <!--
+                <p>
+                  <a class="btn btn-lg btn-outline-light" href="#" role="button">
+                  Learn more
+                  </a>
+                </p>
+              -->
+          </div>
+          
+
+        </div><!-- row -->
+      </div><!-- container -->
+      <!-- ///// End Banner Section Gradient //// -->
 
 
 
-<span class="pull-right">
-{$credit} {$curency}
-</span>
 
-</h3>
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
 
 
+          <h3 class="panel-title">Withdrawal
+            <span class="pull-right">
+            {$credit} {$curency}
+            </span>
+          </h3>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Status</th>
+              </tr>
+              </thead>
+            <tbody>  
+              
+              {foreach from=$with item=foo}
+              
+              
+              <tr>
+                <td>{$foo['amount']}</td>
+                <td>{$foo['date']}</td>
+                <td>{if $foo['type']==0}Asmoney{else}Currency{/if}</td>
+                <td>
+                {if $foo['status']==0}
+                
+                	<div class="label label-warning">Pending</div>
+                
+                
+                
+                {elseif $foo['status']==1}
+                
+                	<div class="label label-success">Paid</div>
+                
+                
+                {/if}
+                
+                
+                
+                </td>
+              </tr>
+              {/foreach}
+              
+              
+              
+              
+            </tbody>
+          </table>
 
 
-</div>
-  
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Amount</th>
-      <th>Date</th>
-      <th>Type</th>
-      <th>Status</th>
-    </tr>
-    </thead>
-  <tbody>  
-    
-    {foreach from=$with item=foo}
-    
-    
-    <tr>
-      <td>{$foo['amount']}</td>
-      <td>{$foo['date']}</td>
-      <td>{if $foo['type']==0}Asmoney{else}Currency{/if}</td>
-      <td>
-      {if $foo['status']==0}
-      
-      	<div class="label label-warning">Pending</div>
-      
-      
-      
-      {elseif $foo['status']==1}
-      
-      	<div class="label label-success">Paid</div>
-      
-      
-      {/if}
-      
-      
-      
-      </td>
-    </tr>
-    {/foreach}
-    
-    
-    
-    
-  </tbody>
-</table>
-
-<div class="panel-body">
-{if $over}
-<div class="alert alert-danger">You have asked more than in your account</div>
-{/if}
+          {if $over}
+            <div class="alert alert-danger">
+              You have asked more than in your account
+            </div>
+          {/if}
 
 
-
-{if $less}
-<div class="alert alert-danger">You are trying to withdrawal below the minimum amount.</div>
-{/if}
+          {if $less}
+            <div class="alert alert-danger">
+              You are trying to withdrawal below the minimum amount.
+            </div>
+          {/if}
+        </div>
+      </div>
 
 
 
 
 
 <div class="row">
+        <div class="col-lg-9 mx-auto">
 
 
 
-
-
-
-<div style="border:1px solid #ccc;padding:15px;margin-right:50px;" class="col-md-5">
+<div style="border:1px solid #ccc;padding:15px;margin-right:50px;" class="col-lg-4">
   <h3>Withdraw to AsMoney</h3>
 
-  AsMoney is a bitcoin payment processor that allow us to send micropayments<br><br>
+  AsMoney is a bitcoin payment processor that allow us to send micropayments<br>
   
-Withdrawal any amount without minimum<br> Payment will be proceed instantly <br>
-You can transfer your money to any cryptocoin from AsMoney<br> 
+  <br>
+  
+Withdrawal any amount without minimum<br> Payment will be proceed instantly 
+<br>
+You can transfer your money to any cryptocoin from AsMoney
+<br> 
     If you don't have AsMoney account, create a <a href="https://www.asmoney.com/default.aspx" target="a_blank">new one</a><br>
 <br><br><br>
   
@@ -102,7 +132,10 @@ You can transfer your money to any cryptocoin from AsMoney<br>
 
 </div>
 
-<div class="col-md-5" style="border:1px solid #ccc;padding:15px;">
+
+
+
+<div class="col-lg-4" style="border:1px solid #ccc;padding:15px;">
   <h3>Withdraw to coin</h3>You can withdraw balance directly to your crypto address but you need<br><br>your balance should higher than {$cur_min}<br> Payment will be proceed with delay<br><br><br><br><br><br>
   
 <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
@@ -120,9 +153,7 @@ You can transfer your money to any cryptocoin from AsMoney<br>
 
 
 
-  </div>
-</div>
-
+  
 <script type="text/javascript">
  function checkasmoney() {
  
@@ -145,6 +176,10 @@ return true;
 }
 
 </script>
+
+
+
+
 
 <div class="modal fade" id="asmoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -176,14 +211,13 @@ Your Asmoney account : {$asmoneyexist}
  {/if}
 
 
-
-
        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-success" value="1" name="asmoney">Submit</button>
       </div>
+
     </div>
     
     </form>
@@ -195,33 +229,36 @@ Your Asmoney account : {$asmoneyexist}
 
 
        
-<script type="text/javascript">
-function checkcoin() {
- 
-var address = document.coin.address.value;
-var amount = document.coin.amount.value;
+      <script type="text/javascript">
+      function checkcoin() {
+       
+      var address = document.coin.address.value;
+      var amount = document.coin.amount.value;
 
 
-if (amount <= 0) {
-alert('Amount is incorrect');
-return false;
+      if (amount <= 0) {
+      alert('Amount is incorrect');
+      return false;
 
-}
+      }
 
- if (address.length <= 15 )
-{
-    alert('Crypto address is not correct ');
-return false;
-}
+       if (address.length <= 15 )
+      {
+          alert('Crypto address is not correct ');
+      return false;
+      }
 
-if(/^[a-zA-Z0-9- ]*$/.test(address) == false) {
-    alert('Crypto address is not correct ');
-return false;
-} 
+      if(/^[a-zA-Z0-9- ]*$/.test(address) == false) {
+          alert('Crypto address is not correct ');
+      return false;
+      } 
 
-return true;
-}
-</script>
+      return true;
+      }
+      </script>
+
+
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -235,22 +272,21 @@ return true;
       <div class="modal-body">
        
        
-       
-       
+        
        
     <div class="form-group">
     <label for="exampleInputEmail1">Amount</label>
     <input type="text" class="form-control" name="amount" placeholder="Amount to withdrawal">
-  </div>
+    </div>
 
-{if {$cryptoexist}}
-Your Crypto address : {$cryptoexist}
-{else}
-  <div class="form-group">
-    <label for="exampleInputEmail1">Wallet</label>
-    <input type="text" class="form-control" name="address" placeholder="crypto address">
-  </div>
- {/if}
+    {if {$cryptoexist}}
+    Your Crypto address : {$cryptoexist}
+    {else}
+      <div class="form-group">
+        <label for="exampleInputEmail1">Wallet</label>
+        <input type="text" class="form-control" name="address" placeholder="crypto address">
+      </div>
+     {/if}
 
 
        
@@ -271,8 +307,5 @@ Your Crypto address : {$cryptoexist}
 
 
 
-
-
-<br>
 
 {include file='template/footer.tpl'}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 05:30:00
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 06:36:28
          compiled from "template/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11774843965ab0c55c0abf06-93710446%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e55ab8c775f6112f46609121c7799f06e5327965' => 
     array (
       0 => 'template/index.tpl',
-      1 => 1522063799,
+      1 => 1522067786,
       2 => 'file',
     ),
   ),
@@ -68,7 +68,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="row">
 
 		
-		<Div class="col-lg-6 mx-auto">
+		<Div class="col-lg-5 mx-auto text-center">
 
 			<h3>Earn Free SuperiorCoin</h3>
 			
@@ -88,14 +88,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<?php }?>
 			
 				<?php if (!$_smarty_tpl->tpl_vars['timer']->value) {?>
-				<form action="" method="post">
-					<Div class="row text-center">
-						<Div class="col-md-5 col-md-push-3 text-center"><?php echo $_smarty_tpl->tpl_vars['captcha']->value;?>
+				<form action="" method="post" class="text-center mx-auto">
+					<Div class="text-center">
+						<Div class="mx-auto text-center"><?php echo $_smarty_tpl->tpl_vars['captcha']->value;?>
 </Div>
 					</Div>
 					<br>
-					<Div class="row text-center">
-						<Div class="col-md-5 col-md-push-3 text-center"> 
+					<Div class="text-center">
+						<Div class=" text-center"> 
 						<button type="submit" name="claim" class="btn btn-success btn-block">Claim</button>
 						</Div>    
 					</Div>

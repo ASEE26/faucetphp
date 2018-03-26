@@ -34,7 +34,7 @@
 <div class="row">
 
 		
-		<Div class="col-lg-6 mx-auto">
+		<Div class="col-lg-5 mx-auto text-center">
 
 			<h3>Earn Free SuperiorCoin</h3>
 			
@@ -52,13 +52,13 @@
 				{/if}
 			
 				{if !$timer}
-				<form action="" method="post">
-					<Div class="row text-center">
-						<Div class="col-md-5 col-md-push-3 text-center">{$captcha}</Div>
+				<form action="" method="post" class="text-center mx-auto">
+					<Div class="text-center">
+						<Div class="mx-auto text-center">{$captcha}</Div>
 					</Div>
 					<br>
-					<Div class="row text-center">
-						<Div class="col-md-5 col-md-push-3 text-center"> 
+					<Div class="text-center">
+						<Div class=" text-center"> 
 						<button type="submit" name="claim" class="btn btn-success btn-block">Claim</button>
 						</Div>    
 					</Div>

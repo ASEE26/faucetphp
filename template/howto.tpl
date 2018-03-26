@@ -1,20 +1,48 @@
 {include file='template/header.tpl'}
 
-<div id="blue">
-<div class="container">
-<div class="row"><h3>How it work?</h3>
-</div><!-- /row -->	    </div> <!-- /container -->	</div>
-<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">How to Earn fee bitcoin?</h3></div>  
 
-<div class="panel-body">
-<div class="row">
-<p>1) Register an account for free</p>
-<p>2) Login to your account and solve the Captcha and Earn fee coin</p>
-<p>3) Send a Withdrawal request to receive balane</p>
-<br><br>
-<p>* If you have asmoney account, your withdrawal will be proceed instantly otherwise you should wait until your balance reach to (minimum amount) .</p>
+	<!-- ///// Start Banner Section Gradient //// -->
+	<div class="container-fluid py-5">
+        <div class="row gradient-bg">
+          
+          
+          <div class="col-lg-8 text-center text-light mx-auto ">
 
-</div>
-</div></div>
+            <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
+                <h1 class="text-light">
+                	How it work?
+            	</h1>
+                <p>
+                	How to Earn fee SuperiorCoin?            	
+                </p>
+                <!--
+                <p>
+                	<a class="btn btn-lg btn-outline-light" href="#" role="button">
+                	Learn more
+                	</a>
+                </p>
+            	-->
+          </div>
+          
+
+        </div><!-- row -->
+      </div><!-- container -->
+      <!-- ///// End Banner Section Gradient //// -->
+
+
+
+		<div class="row">
+			<Div class="col-lg-9 mx-auto py-5">
+
+
+				<p>1) Register an account for free</p>
+				<p>2) Login to your account and solve the Captcha and Earn fee coin</p>
+				<p>3) Send a Withdrawal request to receive balane</p>
+				<br><br>
+				<p>* If you have asmoney account, your withdrawal will be proceed instantly otherwise you should wait until your balance reach to (minimum amount) .</p>
+
+			</Div>
+		</div>
+
 {include file='template/footer.tpl'}
 
