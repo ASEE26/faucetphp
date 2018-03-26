@@ -1,41 +1,100 @@
-<html>
-<head>    
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    <title>Faucet</title>    
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.css">    
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.css">  
-	<link rel="stylesheet" type="text/css" href="style/css/font-awesome.css">    
-	<link rel="stylesheet" type="text/css" href="style/css/style.css">	
-	<script language="javascript" type="text/javascript" src="style/javascript/jquery-1.11.2.min.js">
-		
-	</script>	
-	<script language="javascript" type="text/javascript" src="style/javascript/bootstrap.min.js"></script>
-</head>
-<body>
-	<nav class="navbar navbar-pro navbar-fixed-top">	
-		<div class="container">            
-			<div class="navbar-header">          
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 
-			<span class="sr-only">Toggle navigation</span>            
-			<span class="icon-bar"></span>           
-			 <span class="icon-bar"></span>            
-			 <span class="icon-bar"></span>          
-			</button>          
-			<a class="navbar-brand" href="#">First Faucet</a>       
-			 </div>                
-			 <div id="navbar" class="collapse navbar-collapse">          <ul class="nav navbar-nav">            
-			 	<li><a href="index.php">Home</a></li>                                    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="template/assets/images/favicon.ico">
+
+    <title>The Superior Coin Faucet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="template/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="template/assets/css/carousel.css" rel="stylesheet">
+    <link href="template/assets/css/custom.css" rel="stylesheet">
+    <script src="template/assets/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader">
+        <img src="template/assets/images/loader.gif" alt="">
+      </div>
+
+      <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+    </div>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+
+        <a class="navbar-brand" href="#">
+          <img src="template/assets/images/SuperiorCoinLogoMenu.png" width="200" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+
+
+          		<li class="nav-item"><a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a></li>                                    
 			 	{if !$logged}            
-			 	<li><a href="login.php">Login</a></li>            
-			 	<li><a href="register.php">Register</a></li>			
-			 	<li><a href="howto.php">How It works?</a></li>            {else}                        
-			 	<li><a href="withdrawal.php">Withdrawal</a></li>
+			 	<li class="nav-item"><a class="nav-link"  href="login.php">Login</a></li>            
+			 	<li class="nav-item"><a class="nav-link"  href="register.php">Register</a></li>			
+			 	<li class="nav-item"><a class="nav-link"  href="howto.php">How It works?</a></li>            {else}                        
+			 	<li class="nav-item"><a  class="nav-link" href="withdrawal.php">Withdrawal</a></li>
 
-			 	<li><a href="donate.php">Donate</a></li>                        <li><a href="referral.php">Referral</a></li>                        
-			 	<li><a href="pass.php">Change Password</a></li>                                      
-			 	<li><a href="logout.php">Logout</a></li>                                                                                    
-			 {/if}                                                                                                                      </ul>        
-			</div><!--/.nav-collapse -->	
-		</div>
-		</nav>
-		<div class="container">
+			 	<li class="nav-item"><a class="nav-link"  href="donate.php">Donate</a></li>                        
+			 	<li><a  class="nav-link" href="referral.php">Referral</a></li>                        
+			 	<li class="nav-item">
+			 		<a  class="nav-link" href="pass.php">Change Password</a>
+			 	</li>                                      
+			 	<li class="nav-item">
+			 		<a  class="nav-link" href="logout.php">Logout</a>
+			 	</li>                                                                                    
+			 	{/if}   
+            
+
+
+			<!--
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	              Dropdown link
+	            </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	              <a class="dropdown-item" href="#">Action</a>
+	              <a class="dropdown-item" href="#">Another action</a>
+	              <a class="dropdown-item" href="#">Something else here</a>
+	            </div>
+	          </li>
+	      	-->
+
+
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+
+
+
+
+

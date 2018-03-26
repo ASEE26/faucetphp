@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-24 15:44:48
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 05:30:00
          compiled from "template/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11774843965ab0c55c0abf06-93710446%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e55ab8c775f6112f46609121c7799f06e5327965' => 
     array (
       0 => 'template/index.tpl',
-      1 => 1521927880,
+      1 => 1522063799,
       2 => 'file',
     ),
   ),
@@ -34,124 +34,169 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5ab0c55c318f43_40523773')) {function content_5ab0c55c318f43_40523773($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('template/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
+	
+	<!-- ///// Start Banner Section Gradient //// -->
+	<div class="container-fluid py-5">
+        <div class="row gradient-bg">
+          
+          
+          <div class="col-lg-8 text-center text-light mx-auto ">
 
-<div id="blue">
-	<div class="container">
-		<div class="row"><h3>Earn Free CryptoCurrency</h3></div><!-- /row -->	 
-	</div> <!-- /container -->	
-</div>	
+            <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
+                <h1 class="text-light">
+                	Welcome to SuperiorCoin Faucet!
+            	</h1>
+                <p>
+                	Stay in our website to win and claim more money.            	
+                </p>
+                <!--
+                <p>
+                	<a class="btn btn-lg btn-outline-light" href="#" role="button">
+                	Learn more
+                	</a>
+                </p>
+            	-->
+          </div>
+          
 
-<div class="navbar navbar-default">
-	<div class="row">
-		<div class="col-md-2 text-center" style="width:135px;">	
-			<div style="background-color:#B0B0B0; width:120px; height:600px;">A</div>
-		</div>
-		<Div class="col-md-9">
-			<Div class="row text-center">
-				<div style="background-color:#B0B0B0; width:768px; height:90px;margin-left:auto; margin-right:auto;">A</div>
-			</Div>
-			<?php if (!$_smarty_tpl->tpl_vars['notlogged']->value) {?>
-			<br>
-			<?php if ($_smarty_tpl->tpl_vars['prize']->value) {?>
-			<div class="alert alert-success">You have won <?php echo $_smarty_tpl->tpl_vars['prize']->value;?>
- <?php echo $_smarty_tpl->tpl_vars['curency']->value;?>
-</div>
-			<?php }?>
-			<?php if ($_smarty_tpl->tpl_vars['capt']->value) {?>
-			<div class="alert alert-danger">
-			You have won entered wrong captcha
-			</div>
-			<?php }?>
+        </div><!-- row -->
+      </div><!-- container -->
+      <!-- ///// End Banner Section Gradient //// -->
+
+
+
+<div class="row">
+
+		
+		<Div class="col-lg-6 mx-auto">
+
+			<h3>Earn Free SuperiorCoin</h3>
 			
-			<?php if (!$_smarty_tpl->tpl_vars['timer']->value) {?>
-			<form action="" method="post">
-				<Div class="row text-center">
-					<Div class="col-md-5 col-md-push-3 text-center"><?php echo $_smarty_tpl->tpl_vars['captcha']->value;?>
-</Div>
-				</Div>
+			<?php if (!$_smarty_tpl->tpl_vars['notlogged']->value) {?>
 				<br>
-				<Div class="row text-center">
-					<Div class="col-md-5 col-md-push-3 text-center"> 
-					<button type="submit" name="claim" class="btn btn-success btn-block">Claim</button>
-					</Div>    
-				</Div></form>   
-				<?php } else { ?>            
-				<div class="alert alert-info">You can get a reward again in 
-					<div data-date="<?php echo $_smarty_tpl->tpl_vars['timer_amount']->value;?>
-" class="timer btn btn-warning">
-						
+				<?php if ($_smarty_tpl->tpl_vars['prize']->value) {?>
+					<div class="alert alert-success">
+						You have won <?php echo $_smarty_tpl->tpl_vars['prize']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['curency']->value;?>
+
 					</div>
-				</div>              
-				<?php echo '<script'; ?>
+				<?php }?>
+				<?php if ($_smarty_tpl->tpl_vars['capt']->value) {?>
+					<div class="alert alert-danger">
+						You have won entered wrong captcha
+					</div>
+				<?php }?>
+			
+				<?php if (!$_smarty_tpl->tpl_vars['timer']->value) {?>
+				<form action="" method="post">
+					<Div class="row text-center">
+						<Div class="col-md-5 col-md-push-3 text-center"><?php echo $_smarty_tpl->tpl_vars['captcha']->value;?>
+</Div>
+					</Div>
+					<br>
+					<Div class="row text-center">
+						<Div class="col-md-5 col-md-push-3 text-center"> 
+						<button type="submit" name="claim" class="btn btn-success btn-block">Claim</button>
+						</Div>    
+					</Div>
+				</form>   
+				<?php } else { ?>            
+					<div class="alert alert-info">
+						You can get a reward again in 
+						<div data-date="<?php echo $_smarty_tpl->tpl_vars['timer_amount']->value;?>
+" class="timer btn btn-warning">
+							
+						</div>
+					</div>              
+					
+					<?php echo '<script'; ?>
 >           
-					$('.timer').each(function(index, element) {	
-						var diff=$(this).data('date');	
-						var tth=$(this);	
-						if(diff>0){	
-							var minutes = Math.floor(diff / 60);	
-							var seconds = diff - minutes * 60;	
-							var interval=setInterval(function() {		
-								if(seconds == 0) {			
-									if(minutes == 0) {				
-										location.reload();			
-									}else{				
-										minutes--;				
-										seconds = 60;			
+						$('.timer').each(function(index, element) {	
+							var diff=$(this).data('date');	
+							var tth=$(this);	
+							if(diff>0){	
+								var minutes = Math.floor(diff / 60);	
+								var seconds = diff - minutes * 60;	
+								var interval=setInterval(function() {		
+									if(seconds == 0) {			
+										if(minutes == 0) {				
+											location.reload();			
+										}else{				
+											minutes--;				
+											seconds = 60;			
+										}		
 									}		
-								}		
-								if(minutes > 0){			
-									var minute_text = minutes + ':';									
-								}else{ 			
-									var minute_text = '';		
-								}		
-								tth.html(minute_text + seconds);		
-								seconds--;	
-							}, 
-							1000);	
-						}});               
-				<?php echo '</script'; ?>
->                                                        	<?php }
-} else { ?><br>
+									if(minutes > 0){			
+										var minute_text = minutes + ':';									
+									}else{ 			
+										var minute_text = '';		
+									}		
+									tth.html(minute_text + seconds);		
+									seconds--;	
+								}, 
+								1000);	
+							}});               
+					<?php echo '</script'; ?>
+>                                                        
+				<?php }?>
+				
+			<?php } else { ?>
+				<br>
 				<div class="alert alert-info">
 					You are not logged in, Earn free Bitcoin by 
 					<a href="register.php">opening account</a>
 				</div>
-				<?php }?>
-				<table class="table table-striped">  
-					<thead>    
-						<tr>      
-							<th colspan="3">Link</th>      
-						</tr>    </thead>  
-						<tbody>          
-						<?php  $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['foo']->_loop = false;
+			<?php }?>
+			<table class="table table-striped">  
+				<thead>    
+					<tr>      
+						<th colspan="3">Link</th>      
+					</tr>    
+				</thead>  
+					<tbody>          
+					<?php  $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['foo']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['with']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['foo']->key => $_smarty_tpl->tpl_vars['foo']->value) {
 $_smarty_tpl->tpl_vars['foo']->_loop = true;
 ?>            
-							<tr>      
-								<td colspan="3">
-									<a href="<?php echo $_smarty_tpl->tpl_vars['foo']->value['link'];?>
+						<tr>      
+							<td colspan="3">
+								<a href="<?php echo $_smarty_tpl->tpl_vars['foo']->value['link'];?>
 " target="_blank"><?php echo $_smarty_tpl->tpl_vars['foo']->value['link'];?>
 </a>
-								</td>      
-							</tr>    
-						<?php } ?>                  
-					</tbody>
-				</table>
-			</Div>
-			<div class="col-md-2 text-center" style="width:135px;">	
-				<div style="background-color:#B0B0B0; width:120px; height:600px;">
-				B
-			</div>
-		</div>
+							</td>      
+						</tr>    
+					<?php } ?>                  
+				</tbody>
+			</table>
+
+		</Div>
+
+
 	</div>
 
 
-  </div>
 
-<div class="clearfix">
+			
 	
-</div>
-</div>
+
+
+	
+	<!-- ///// Start Widget SuperiorCoin Cureency //// -->	
+	<div class="row py-5">
+        <div class="col-lg-6 mx-auto">
+          <?php echo '<script'; ?>
+ type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"><?php echo '</script'; ?>
+>
+        <div class="coinmarketcap-currency-widget" data-currencyid="2522" data-base="USD"  data-secondary="BTC"></div>
+          
+        </div>  
+        
+      </div>
+      <!-- ///// End Widget SuperiorCoin Cureency //// -->	
+
+
+
+
 <?php echo $_smarty_tpl->getSubTemplate ('template/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 <?php }} ?>
