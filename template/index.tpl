@@ -103,7 +103,7 @@
 			{else}
 				<br>
 				<div class="alert alert-info">
-					You are not logged in, Earn free Bitcoin by 
+					You are not logged in, Earn free Superiotcoin by 
 					<a href="register.php">opening account</a>
 				</div>
 			{/if}
