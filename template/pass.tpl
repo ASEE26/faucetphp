@@ -16,7 +16,7 @@
                   Change Password!
               </h1>
                 <p>
-                  You can change your pasword here.              
+                  You can change your password here.              
                 </p>
                 <!--
                 <p>

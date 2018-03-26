@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 05:42:31
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 05:52:31
          compiled from "template/pass.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:764677365ab13a427ecb86-65085789%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bae4c604d7ee79d6392418d89ab053694a35090a' => 
     array (
       0 => 'template/pass.tpl',
-      1 => 1522064549,
+      1 => 1522064925,
       2 => 'file',
     ),
   ),
@@ -43,7 +43,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   Change Password!
               </h1>
                 <p>
-                  You can change your pasword here.              
+                  You can change your password here.              
                 </p>
                 <!--
                 <p>
