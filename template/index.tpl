@@ -10,7 +10,7 @@
 
             <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
                 <h1 class="text-light">
-                	Welcome to SuperiorCoin Faucet!
+                	Welcome to SuperiorCoin's Faucet!
             	</h1>
                 <p>
                 	Stay in our website to win and claim more money.            	
@@ -36,7 +36,7 @@
 		
 		<Div class="col-lg-5 mx-auto text-center">
 
-			<h3>Earn Free SuperiorCoin</h3>
+			<h3>Earn Free SuperiorCoin's</h3>
 			
 			{if !$notlogged}
 				<br>
@@ -103,7 +103,7 @@
 			{else}
 				<br>
 				<div class="alert alert-info">
-					You are not logged in, Earn free Superiotcoin by 
+					You are not logged in, Earn free SuperiorCoin's by 
 					<a href="register.php">opening account</a>
 				</div>
 			{/if}
