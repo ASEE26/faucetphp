@@ -206,6 +206,7 @@ $realBalance = number_format($realBalance, 2, '.', '');
 //print_r($realBalance);
 $smarty->assign('faucet_balance',$realBalance);
 
+
 */
 
 
