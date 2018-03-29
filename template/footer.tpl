@@ -25,6 +25,10 @@
     <script src="template/assets/js/holder.min.js"></script>
     <script>
       $(document).ready(function() {
+
+        $(".letter").lettering();
+            
+
   
   setTimeout(function(){
     $('body').addClass('loaded');

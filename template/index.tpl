@@ -133,9 +133,17 @@
 	<!-- ///// Start Widget SuperiorCoin Balance //// -->
 	<div class="container-fluid py-5">	
 	<div class="row gradient-bg">
+
+		<div class="col-lg-6 mx-auto">
+		 	<h1 class="text-light">
+                Our Faucet's Balance is!
+        	</h1>
+		</div>
         <div class="col-lg-6 mx-auto ">
 
-			<h1>test</h1>
+			 <div class="general_balance">
+                <h1 class="letter">228,000 Sup</h1>
+            </div>
 
     	</div>
 	</div>
