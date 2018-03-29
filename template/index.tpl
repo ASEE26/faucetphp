@@ -3,10 +3,10 @@
 	
 	<!-- ///// Start Banner Section Gradient //// -->
 	<div class="container-fluid">
-        <div class="row gradient-bg py-20">
+        <div class="row gradient-bg py-10">
           
           
-          <div class="col-lg-8 text-center text-light mx-auto ">
+          <div class="col-lg-8 text-center text-light mx-auto py-10">
 
             <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
                 <h1 class="text-light">
