@@ -10,7 +10,7 @@ $pablo= '5NKJdxdiCmccLyw53D8MzUhZYzDDvdBXshrVhUgYSYjyJFk3Wn5bMjsDSCxzSi1d95M83fE
 $tx_hash = $walletFaucet->transfer($options);
 $options = [
     'destinations' => (object) [
-        'amount' => '2',
+        'amount' => '4',
         'address' => $pablo
     ]
 ];
