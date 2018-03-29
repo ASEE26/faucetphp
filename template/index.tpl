@@ -137,7 +137,7 @@
 
 			<div class="col-lg-8 mx-auto">
 			 	<h1 class="text-light">
-	                Our Faucet's Balance is!
+	                Our Faucet's Balance is
 	        	</h1>
 			</div>
 
@@ -147,10 +147,20 @@
 
 	        <div class="col-lg-8 mx-auto ">
 				 <div class="general_balance">
-	                <h1 class="letter">228,000 Sup</h1>
+	                <h1 class="letter">228,000</h1>
 	            </div>
 	    	</div>
 	    </div>
+
+	    <div class="row ">
+
+			<div class="col-lg-8 mx-auto">
+			 	<h1 class="text-light">
+	                SuperiorCoins Available for you to win!
+	        	</h1>
+			</div>
+
+		</div> <!-- row -->
 
 	</div>
 	</div>
