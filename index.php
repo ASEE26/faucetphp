@@ -190,9 +190,9 @@ $smarty->assign('captcha',solvemedia_get_html($privkey));
 //Adding Code to Display Superior CoinBalance Faucet //
 
 
-use Superior\Wallet;
-
 /*
+
+use Superior\Wallet;
 
 $walletFaucet = new Superior\Wallet();
 
