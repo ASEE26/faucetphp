@@ -147,7 +147,7 @@
 
 	        <div class="col-lg-8 mx-auto ">
 				 <div class="general_balance">
-	                <h1 class="letter">228,000</h1>
+	                <h1 class="letter">{$faucet_balannce}</h1>
 	            </div>
 	    	</div>
 	    </div>
