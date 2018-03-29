@@ -1,61 +1,25 @@
-<?php ini_set('display_errors', true);?>
-
-<html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
- <?php echo '<p>Hello World</p>';
- //ini_set('display_errors', true);
-
+<?php 
+ini_set('display_errors', true);
+//Adding Lib for SuperiorCoin Functions
 require "../vendor/autoload.php";
 use Superior\Wallet;
-$wallet = new Superior\Wallet();
+$walletFaucet = new Superior\Wallet();
+//$balanceFaucet = $walletFaucet->getBalance();
 
-$address = $wallet->getAddress();
-echo ($address);
+$pablo= '5NKJdxdiCmccLyw53D8MzUhZYzDDvdBXshrVhUgYSYjyJFk3Wn5bMjsDSCxzSi1d95M83fENY7uEmUm5t2Uj8rGEFXFTQ3q';
 
-$balance = $wallet->getBalance();
-$getfaucetbal = json_decode($balance);
-$realBalance = number_format($getfaucetbal->{'balance'}/100000000);
-$realBalance = number_format($realBalance, 10, '.', '');
-echo "<p>Balance General: $realBalance</p>";
-
-$balanceDisponible = number_format($getfaucetbal->{'unlocked_balance'}/100000000);
-$balanceDisponible = number_format($balanceDisponible, 10, '.', '');
-echo "BalanceDisponible: $balanceDisponible";
-
-//echo '<p>Height</p>';
-
-$height = $wallet->getHeight();
-//echo ($height);
-
-echo '<p>Transfers</p>';
-
-    //$destination1 = array();
-    //$destination1=array["amount" => $_POST['amount1'],"address" => $_POST['account'] ];
-   $destination1 = (object) ['amount' => $_GET['amount1'],
-                            'address' => $_GET['account']];
-
-    $options = ['destinations' => $destination1];
+$options = [
+    'destinations' => (object) [
+        'amount' => '2.5',
+        'address' => $pablo
+    ]
+];
 
 
-    $objeto = $wallet->transfer($options);
-    echo "$objeto";
-   // echo ($address);
+$tx_hash = $walletFaucet->transfer($options);
 
-    echo $destination1->{'amount'};
+echo $tx_hash;
 
 ?>
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
-    Transfer Amount:<br>
-    <input type="text" name="amount1"><br/>
-    Account Destination:<br>
-    <input type="text" name="account"><br/>
-    <input type="submit" value="Send">
-</form>
 
-
-</body>
-</html>
