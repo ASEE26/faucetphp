@@ -2,8 +2,8 @@
 
 	
 	<!-- ///// Start Banner Section Gradient //// -->
-	<div class="container-fluid py-5">
-        <div class="row gradient-bg">
+	<div class="container-fluid">
+        <div class="row gradient-bg py-20">
           
           
           <div class="col-lg-8 text-center text-light mx-auto ">
