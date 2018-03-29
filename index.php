@@ -206,7 +206,7 @@ $balanceFaucet = $walletFaucet->getBalance();
 //$balance = $this->getBalance();
 $getfaucetbal = json_decode($balanceFaucet);
 $realBalance = number_format($getfaucetbal->{'balance'}/100000000);
-$realBalance = number_format($realBalance, 2, '.', '');
+//$realBalance = number_format($realBalance, 2, '.', '');
 $realBalance2 ="129,404";
 //return $realBalance;
 //print_r($realBalance);
