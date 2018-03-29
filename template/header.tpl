@@ -21,7 +21,7 @@
   <body>
     <div id="loader-wrapper">
       <div id="loader">
-        <img src="template/assets/images/loader.gif" alt="">
+        <img src="template/assets/images/superiorcoin-animation.gif" alt="">
       </div>
 
       <div class="loader-section section-left"></div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-26 17:51:26
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-03-27 15:37:13
          compiled from "template/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11774843965ab0c55c0abf06-93710446%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e55ab8c775f6112f46609121c7799f06e5327965' => 
     array (
       0 => 'template/index.tpl',
-      1 => 1522069442,
+      1 => 1522114029,
       2 => 'file',
     ),
   ),
@@ -44,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
             <img src="template/assets/images/SuperiorCoinLogo300.png" width="200" alt="">
                 <h1 class="text-light">
-                	Welcome to SuperiorCoin Faucet!
+                	Welcome to SuperiorCoin's Faucet!
             	</h1>
                 <p>
                 	Stay in our website to win and claim more money.            	
@@ -70,7 +70,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		
 		<Div class="col-lg-5 mx-auto text-center">
 
-			<h3>Earn Free SuperiorCoin</h3>
+			<h3>Earn Free SuperiorCoin's</h3>
 			
 			<?php if (!$_smarty_tpl->tpl_vars['notlogged']->value) {?>
 				<br>
@@ -143,7 +143,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<?php } else { ?>
 				<br>
 				<div class="alert alert-info">
-					You are not logged in, Earn free Superiotcoin by 
+					You are not logged in, Earn free SuperiorCoin's by 
 					<a href="register.php">opening account</a>
 				</div>
 			<?php }?>
