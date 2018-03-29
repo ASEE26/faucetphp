@@ -134,7 +134,7 @@
 	<div class="row py-5">
         <div class="col-lg-6 mx-auto gradient-bg">
 
-			<h1>{$faucet_balance}</h1>
+			<h1>test</h1>
 
     	</div>
 	</div>
