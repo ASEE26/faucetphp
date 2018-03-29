@@ -5,6 +5,9 @@ require_once "header.php";
 
 require_once "maincore.php";
 
+//Adding Lib for SuperiorCoin Functions
+require "../vendor/autoload.php";
+
 
 
 require_once "includes/solvemedialib.php";
@@ -182,15 +185,26 @@ $smarty->assign('captcha',solvemedia_get_html($privkey));
 }
 
 
+//Adding Code to Display Superior CoinBalance Faucet //
+
+use Superior\Wallet;
+$wallet = new Superior\Wallet();
+
+$address = $wallet->getAddress();
+$balance = $wallet->getBalance();
+
+
+//$balance = $this->getBalance();
+$getfaucetbal = json_decode($balance);
+$realBalance = number_format($getfaucetbal->{'balance'}/100000000);
+$realBalance = number_format($realBalance, 2, '.', '');
+//return $realBalance;
+//print_r($realBalance);
+$smarty->assign('faucet_balance',strval($realBalance));
 
 
 
-
-
-
-
-
-
+                    
 
 
 

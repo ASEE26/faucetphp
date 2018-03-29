@@ -130,15 +130,23 @@
 	</div>
 
 
+	<!-- ///// Start Widget SuperiorCoin Balance //// -->	
+	<div class="row py-5">
+        <div class="col-lg-6 mx-auto gradient-bg">
+
+			<h1>{$faucet_balance}</h1>
+
+    	</div>
+	</div>
+	<!-- ///// End Widget SuperiorCoin Balance //// -->	
+
+
 
 			
 	
-
-
-	
 	<!-- ///// Start Widget SuperiorCoin Cureency //// -->	
 	<div class="row py-5">
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto ">
           <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
         <div class="coinmarketcap-currency-widget" data-currencyid="2522" data-base="USD"  data-secondary="BTC"></div>
           
