@@ -185,22 +185,24 @@ $smarty->assign('captcha',solvemedia_get_html($privkey));
 }
 
 
+
+
 //Adding Code to Display Superior CoinBalance Faucet //
 
 use Superior\Wallet;
-$wallet = new Superior\Wallet();
+$walletFaucet = new Superior\Wallet();
 
-$address = $wallet->getAddress();
-$balance = $wallet->getBalance();
+$addressFaucet = $walletFaucet->getAddress();
+$balanceFaucet = $walletFaucet->getBalance();
 
 
 //$balance = $this->getBalance();
-$getfaucetbal = json_decode($balance);
+$getfaucetbal = json_decode($balanceFaucet);
 $realBalance = number_format($getfaucetbal->{'balance'}/100000000);
 $realBalance = number_format($realBalance, 2, '.', '');
 //return $realBalance;
 //print_r($realBalance);
-$smarty->assign('faucet_balance',strval($realBalance));
+$smarty->assign('faucet_balance',$realBalance);
 
 
 
