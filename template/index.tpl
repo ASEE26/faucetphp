@@ -135,7 +135,7 @@
 	
 		<div class="row ">
 
-			<div class="col-lg-6 mx-auto">
+			<div class="col-lg-8 mx-auto">
 			 	<h1 class="text-light">
 	                Our Faucet's Balance is!
 	        	</h1>
@@ -145,7 +145,7 @@
 
 		<div class="row">
 
-	        <div class="col-lg-6 mx-auto ">
+	        <div class="col-lg-8 mx-auto ">
 				 <div class="general_balance">
 	                <h1 class="letter">228,000 Sup</h1>
 	            </div>
