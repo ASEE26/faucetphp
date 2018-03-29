@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', true);
+//ini_set('display_errors', true);
 
 require_once "header.php";
 
@@ -195,29 +195,9 @@ $smarty->assign('captcha',solvemedia_get_html($privkey));
 //Adding Code to Display Superior CoinBalance Faucet //
 
 
-/*
-
-use Superior\Wallet;
-
-$walletFaucet = new Superior\Wallet();
-
-$addressFaucet = $walletFaucet->getAddress();
-$balanceFaucet = $walletFaucet->getBalance();
-*/
-
-//$balance = $this->getBalance();
-
 $getfaucetbal = json_decode($balanceFaucet);
 $realBalance = number_format($getfaucetbal->{'balance'}/100000000);
-//$realBalance = number_format($realBalance, 2, '.', '');
-$realBalance2 ="129,404";
-//return $realBalance;
-//print_r($realBalance);
-//$smarty->assign('faucet_balance',$realBalance);
-
-
-
-
+$realBalance = number_format($realBalance, 2, '.', '');
 
 
 $smarty->assign('faucet_balance',$realBalance);                    
