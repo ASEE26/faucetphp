@@ -211,7 +211,7 @@ $smarty->assign('faucet_balance',$realBalance);
 
 
 
-$smarty->assign('faucet_balance','120203');                    
+$smarty->assign('faucet_balance','120,203');                    
 
 
 
