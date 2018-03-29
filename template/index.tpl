@@ -131,7 +131,7 @@
 
 
 	<!-- ///// Start Widget SuperiorCoin Balance //// -->
-	<div class="container-fluid py-5 gradient-bg">	
+	<div class="container-fluid py-5 gradient-bg text-center">	
 	
 		<div class="row ">
 
