@@ -201,7 +201,7 @@ $balanceFaucet = $walletFaucet->getBalance();
 //$balance = $this->getBalance();
 $getfaucetbal = json_decode($balanceFaucet);
 $realBalance = number_format($getfaucetbal->{'balance'}/100000000);
-$realBalance = number_format($realBalance, 2, '.', '');
+$realBalance = strval(number_format($realBalance, 2, '.', ''));
 //return $realBalance;
 //print_r($realBalance);
 //$smarty->assign('faucet_balance',$realBalance);
@@ -210,7 +210,7 @@ $realBalance = number_format($realBalance, 2, '.', '');
 
 
 
-$smarty->assign('faucet_balance','120,203');                    
+$smarty->assign('faucet_balance',$realBalance);                    
 
 
 
