@@ -1,4 +1,5 @@
 <?php 
+ini_set('display_errors', true);
 //Adding Lib for SuperiorCoin Functions
 require "../vendor/autoload.php";
 use Superior\Wallet;
