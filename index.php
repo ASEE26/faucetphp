@@ -190,7 +190,7 @@ $smarty->assign('captcha',solvemedia_get_html($privkey));
 //Adding Code to Display Superior CoinBalance Faucet //
 
 
-
+/*
 use Superior\Wallet;
 $walletFaucet = new Superior\Wallet();
 
@@ -207,6 +207,7 @@ $realBalance2 ="129,404";
 //print_r($realBalance);
 //$smarty->assign('faucet_balance',$realBalance);
 
+*/
 
 
 
