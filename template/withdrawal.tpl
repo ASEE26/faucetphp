@@ -110,7 +110,7 @@
 
 
 <div class="row">
-        <div class="col-lg-9 mx-auto">
+        
 
             <div style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
                 <h3>Withdraw to AsMoney</h3>
@@ -135,20 +135,20 @@
                 </button>
 
               </div>
-    </div>
-  </div>
-
-
-
-
-<div class="col-lg-4" style="border:1px solid #ccc;padding:15px;">
-  <h3>Withdraw to coin</h3>You can withdraw balance directly to your crypto address but you need<br><br>your balance should higher than {$cur_min}<br> Payment will be proceed with delay<br><br><br><br><br><br>
+    
   
-<button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
-  Request a coin withdrawal, minimum is ({$cur_min})
-</button>
 
-</div>
+
+
+
+          <div class="col-lg-4" style="border:1px solid #ccc;padding:15px;">
+            <h3>Withdraw to coin</h3>You can withdraw balance directly to your crypto address but you need<br><br>your balance should higher than {$cur_min}<br> Payment will be proceed with delay<br><br><br><br><br><br>
+            
+          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
+            Request a coin withdrawal, minimum is ({$cur_min})
+          </button>
+
+          </div>
 </div>
 
 
