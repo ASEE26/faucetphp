@@ -112,7 +112,7 @@
 <div class="row">
         <div class="col-lg-9 mx-auto">
 
-            <div style="border:1px solid #ccc;padding:15px;margin-right:50px;" class="col-lg-4">
+            <div style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
                 <h3>Withdraw to AsMoney</h3>
 
                 AsMoney is a bitcoin payment processor that allow us to send micropayments
