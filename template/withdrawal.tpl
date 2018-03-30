@@ -105,7 +105,7 @@
 
 
 
-<div class="row ">
+<div class="row mx-auto">
         
 
             <div class="col-lg-9 " style="border:1px solid #ccc;" >
