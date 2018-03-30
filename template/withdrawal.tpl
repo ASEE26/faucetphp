@@ -105,7 +105,8 @@
 
 
 
-<div class="row">
+<div class="row ">
+  <div class="col-lg-9">
         
 
             <div class="col " style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
@@ -147,6 +148,7 @@
             </button>
 
           </div>
+        </div>
 </div><!-- row -->
 
 
