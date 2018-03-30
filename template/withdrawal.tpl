@@ -107,6 +107,7 @@
 
   <div class="row ">
         
+            <!--
 
             <div class="col-lg-9 mx-auto " style="border:1px solid #ccc;" >
                 <h3>Withdraw to AsMoney</h3>
@@ -131,6 +132,8 @@
                 </button>
 
               </div>
+
+            -->
     
 
 
@@ -142,7 +145,7 @@
              Payment will be proceed with delay
              <br><br><br><br><br><br>
             
-            <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
+            <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal">
               Request a coin withdrawal, minimum is ({$cur_min})
             </button>
 
