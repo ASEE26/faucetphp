@@ -102,8 +102,8 @@
           {/if}
 
 
-        </div>
-      </div>
+    </div>
+  </div>
 
 
 
@@ -112,7 +112,7 @@
 <div class="row">
         
 
-            <div style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
+            <div class="col-lg-4" style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
                 <h3>Withdraw to AsMoney</h3>
 
                 AsMoney is a bitcoin payment processor that allow us to send micropayments
@@ -136,8 +136,6 @@
 
               </div>
     
-  
-
 
 
 
@@ -153,35 +151,29 @@
 
 
 
-
-
-
-
-
-
   
-<script type="text/javascript">
- function checkasmoney() {
- 
-var amount = document.asmoney.amount.value;
-var wallet = document.asmoney.wallet.value;
+      <script type="text/javascript">
+       function checkasmoney() {
+       
+      var amount = document.asmoney.amount.value;
+      var wallet = document.asmoney.wallet.value;
 
-if (amount <= 0) {
-alert('Amount is incorrect');
-return false;
+      if (amount <= 0) {
+      alert('Amount is incorrect');
+      return false;
 
-}
+      }
 
-if (wallet.length <= 1 ) {
-    alert('Please Enter your AsMoney username'); 
-    return false;
-}
+      if (wallet.length <= 1 ) {
+          alert('Please Enter your AsMoney username'); 
+          return false;
+      }
 
-return true;
+      return true;
 
-}
+      }
 
-</script>
+      </script>
 
 
 
