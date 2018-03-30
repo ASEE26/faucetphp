@@ -104,8 +104,8 @@
 
 
 
-
-<div class="row mx-auto">
+<div class="container-fluid py-5">
+  <div class="row ">
         
 
             <div class="col-lg-9 " style="border:1px solid #ccc;" >
@@ -149,6 +149,7 @@
           </div>
 
 </div><!-- row -->
+</div>
 
 
 
