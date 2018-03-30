@@ -1,11 +1,8 @@
 {include file='template/header.tpl'}
 
-
-
 <!-- ///// Start Banner Section Gradient //// -->
   <div class="container-fluid py-5">
         <div class="row gradient-bg">
-          
           
           <div class="col-lg-8 text-center text-light mx-auto ">
 
@@ -23,12 +20,11 @@
                   </a>
                 </p>
               -->
-          </div>
+          </div> <!-- col-lg-8 -->
           
-
         </div><!-- row -->
       </div><!-- container -->
-      <!-- ///// End Banner Section Gradient //// -->
+  <!-- ///// End Banner Section Gradient //// -->
 
 
 
@@ -112,7 +108,7 @@
 <div class="row">
         
 
-            <div class="col-lg-4" style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
+            <div class="col-lg-9 mx-auto" style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
                 <h3>Withdraw to AsMoney</h3>
 
                 AsMoney is a bitcoin payment processor that allow us to send micropayments
@@ -139,7 +135,7 @@
 
 
 
-          <div class="col-lg-4" style="border:1px solid #ccc;padding:15px;">
+          <div class="col-lg-9 mx-auto" style="border:1px solid #ccc;padding:15px;">
             <h3>Withdraw to coin</h3>You can withdraw balance directly to your crypto address but you need<br><br>your balance should higher than {$cur_min}<br> Payment will be proceed with delay<br><br><br><br><br><br>
             
           <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
@@ -180,48 +176,56 @@
 
 
 <div class="modal fade" id="asmoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  
   <div class="modal-dialog">
   
     <form action="" method="post" name="asmoney" onsubmit="return checkasmoney()">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Request a withdrawal</h4>
-      </div>
-      <div class="modal-body">
-       
-       
-       
-       
-       
-  <div class="form-group">
-    <label for="exampleInputEmail1">Amount</label>
-    <input type="text" class="form-control" name="amount" placeholder="Amount to withdrawal">
-  </div>
+        
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                &times;
+              </span>
+            </button>
 
-{if {$asmoneyexist}}
-Your Asmoney account : {$asmoneyexist}
-{else}
-  <div class="form-group">
-    <label for="exampleInputEmail1">Wallet</label>
-    <input type="text" class="form-control" name="wallet" placeholder="Asmoney username">
-  </div>
- {/if}
+            <h4 class="modal-title" id="myModalLabel">
+              Request a withdrawal
+            </h4>
 
-
+          </div><!-- modal-header -->
+          
+          <div class="modal-body">
        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success" value="1" name="asmoney">Submit</button>
-      </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Amount</label>
+              <input type="text" class="form-control" name="amount" placeholder="Amount to withdrawal">
+            </div>
 
-    </div>
+            {if {$asmoneyexist}}
+            Your Asmoney account : {$asmoneyexist}
+            {else}
+              <div class="form-group">
+                <label for="exampleInputEmail1">Wallet</label>
+                <input type="text" class="form-control" name="wallet" placeholder="Asmoney username">
+              </div>
+             {/if}
+
+          </div><!-- modal-body -->
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success" value="1" name="asmoney">Submit</button>
+          </div>
+
+        </div><!-- modal-content -->
     
     </form>
     
-  </div>
-</div>
+  </div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
 
 
 
