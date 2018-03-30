@@ -100,6 +100,8 @@
               You are trying to withdrawal below the minimum amount.
             </div>
           {/if}
+
+
         </div>
       </div>
 
@@ -110,27 +112,31 @@
 <div class="row">
         <div class="col-lg-9 mx-auto">
 
+            <div style="border:1px solid #ccc;padding:15px;margin-right:50px;" class="col-lg-4">
+                <h3>Withdraw to AsMoney</h3>
 
-
-<div style="border:1px solid #ccc;padding:15px;margin-right:50px;" class="col-lg-4">
-  <h3>Withdraw to AsMoney</h3>
-
-  AsMoney is a bitcoin payment processor that allow us to send micropayments<br>
+                AsMoney is a bitcoin payment processor that allow us to send micropayments
+                <br>
   
-  <br>
+                <br>
   
-Withdrawal any amount without minimum<br> Payment will be proceed instantly 
-<br>
-You can transfer your money to any cryptocoin from AsMoney
-<br> 
-    If you don't have AsMoney account, create a <a href="https://www.asmoney.com/default.aspx" target="a_blank">new one</a><br>
-<br><br><br>
+                Withdrawal any amount without minimum<br> Payment will be proceed instantly 
+                <br>
+                You can transfer your money to any cryptocoin from AsMoney
+                <br> 
+                If you don't have AsMoney account, create a 
+                <a href="https://www.asmoney.com/default.aspx" target="a_blank">
+                  new one
+                </a>
+                <br><br><br><br>
   
-<button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#asmoney">
-  Request a AsMoney withdrawal, minimum is ({$as_min})
-</button>
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#asmoney">
+                  Request a AsMoney withdrawal, minimum is ({$as_min})
+                </button>
 
-</div>
+              </div>
+    </div>
+  </div>
 
 
 
