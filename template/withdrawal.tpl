@@ -106,10 +106,9 @@
 
 
 <div class="row ">
-  <div class="col-lg-9">
         
 
-            <div class="col " style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
+            <div class="col-lg-6 " style="border:1px solid #ccc;padding:15px;margin-right:50px;" >
                 <h3>Withdraw to AsMoney</h3>
 
                 AsMoney is a bitcoin payment processor that allow us to send micropayments
@@ -136,7 +135,7 @@
 
 
 
-          <div class="col" style="border:1px solid #ccc;padding:15px;">
+          <div class="col-lg-6" style="border:1px solid #ccc;padding:15px;">
             <h3>Withdraw to coin</h3>
             You can withdraw balance directly to your crypto address but you need<br><br>
             your balance should higher than {$cur_min}<br>
@@ -148,7 +147,7 @@
             </button>
 
           </div>
-        </div>
+
 </div><!-- row -->
 
 
