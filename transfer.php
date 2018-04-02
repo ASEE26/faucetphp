@@ -35,7 +35,7 @@ echo "</br></br></br>";
 
 $transfer_result = json_decode($sup_transfer);
 
-//if "code" exist in transfer response
+//if "code" exist in transfer response means that transfe was successfull
 if(isset($transfer_result->{'code'})){
 	} if (isset($transfer_result->{'fee'})) {
 	echo "</br> <h1>Success Transfer!</h1> </br>";
@@ -44,7 +44,7 @@ if(isset($transfer_result->{'code'})){
 	echo 
 	"Transfer Fee: ".$transfer_fee. 
 	"</br>Transfer Hash: ".$transfer_hash;
-//if "code" not exist in transfer response means that error exists
+//if "code" not exists in transfer response means that error exists
 } else {
 	$transfer_errorcode = $transfer_result->{'code'};
 	$transfer_errormessage = $transfer_result->{'message'};
