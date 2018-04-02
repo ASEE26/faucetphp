@@ -20,11 +20,20 @@ $sup_transfer = $walletFaucet->transfer($options);
 print_r($sup_transfer);
 echo "</br></br></br>";
 
-$transfer_result = json_decode($sup_transfer);
-$transfer_fee = $transfer_result->{'fee'};
-$transfer_hash = $transfer_result->{'tx_hash'};
+// {"code":-4,"message":"not enough money"};
 
-echo "Fee: ".$transfer_fee. "</br>Hash: ".$transfer_hash;
+$transfer_result = json_decode($sup_transfer);
+
+if(isset($transfer_result->{'code'})){
+	$transfer_errorcode = $transfer_result->{'code'};
+	$transfer_errormessage = $transfer_result->{'message'};
+	echo "</br> Error Transfer! </br> ";
+
+	echo "Error Code: ".$transfer_errorcode. "</br>Error Message: ".$transfer_errormessage;
+} else {
+	echo "</br> Success Transfer!";
+	print_r($sup_transfer);
+}
 ?>
 
 
