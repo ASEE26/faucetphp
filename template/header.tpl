@@ -17,7 +17,9 @@
     <link href="template/assets/css/carousel.css" rel="stylesheet">
     <link href="template/assets/css/custom.css" rel="stylesheet">
 
-   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116736799-1"></script>
+    <script src="template/assets/js/custom.js"></script>
 
     <script src="template/assets/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
