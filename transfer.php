@@ -16,10 +16,17 @@ $options = [
 ];
 
 
-$tx_hash = $walletFaucet->transfer($options);
+$sup_transfer = $walletFaucet->transfer($options);
+echo $sup_transfer;
+echo "</br></br></br>";
 
-echo $tx_hash;
+$transfer_result = json_decode($sup_transfer);
+$transfer_fee = $transfer_result->{'fee'};
+$transfer_hash = $transfer_result->{'tx_hash'};
 
+echo 
+"Fee: ".$transfer_fee. "</br>"
+"Hash: ".$transfer_hash;
 ?>
 
 
