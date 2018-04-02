@@ -17,7 +17,7 @@ $options = [
 
 
 $sup_transfer = $walletFaucet->transfer($options);
-echo $sup_transfer;
+print_r($sup_transfer);
 echo "</br></br></br>";
 
 $transfer_result = json_decode($sup_transfer);
