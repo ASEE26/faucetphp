@@ -24,9 +24,7 @@ $transfer_result = json_decode($sup_transfer);
 $transfer_fee = $transfer_result->{'fee'};
 $transfer_hash = $transfer_result->{'tx_hash'};
 
-echo 
-"Fee: ".$transfer_fee. "</br>"
-"Hash: ".$transfer_hash;
+echo "Fee: ".$transfer_fee. "</br>Hash: ".$transfer_hash;
 ?>
 
 
