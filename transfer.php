@@ -9,7 +9,7 @@ $transfer_ammount='1';
 //pablo
 $transfer_address= '5NKJdxdiCmccLyw53D8MzUhZYzDDvdBXshrVhUgYSYjyJFk3Wn5bMjsDSCxzSi1d95M83fENY7uEmUm5t2Uj8rGEFXFTQ3q';
 
-echo "<h1>I'm trying to send ".$transfer_ammount." Sups to adress ".$transfer_address."</h1>";
+echo "<h1>I'm trying to send ".$transfer_ammount." Sups </br> To adress ".$transfer_address."</h1>";
 
 $options = [
     'destinations' => (object) [
