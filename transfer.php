@@ -10,7 +10,7 @@ $pablo= '5NKJdxdiCmccLyw53D8MzUhZYzDDvdBXshrVhUgYSYjyJFk3Wn5bMjsDSCxzSi1d95M83fE
 
 $options = [
     'destinations' => (object) [
-        'amount' => '2.5',
+        'amount' => '1',
         'address' => $pablo
     ]
 ];
