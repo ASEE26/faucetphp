@@ -28,11 +28,15 @@ $sup_transfer = $walletFaucet->transfer($options);
 print_r($sup_transfer);
 echo "</br></br></br>";
 
-//This is the succesfull response
-//{"fee":81906500,"tx_blob":"","tx_hash":"bdd1684067bc9fb3a57f6b5b27bc65eb1ed1a8649f9598649998f849b96e96ed","tx_key":""}
+/*
 
-//THIS is the error response
-// {"code":-4,"message":"not enough money"};
+This is the succesfull JSON response
+{"fee":81906500,"tx_blob":"","tx_hash":"bdd1684067bc9fb3a57f6b5b27bc65eb1ed1a8649f9598649998f849b96e96ed","tx_key":""}
+
+THIS is the JSON error response
+{"code":-4,"message":"not enough money"};
+
+*/
 
 
 
