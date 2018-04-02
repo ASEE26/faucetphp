@@ -13,8 +13,8 @@ echo "<h1>I'm trying to send ".$transfer_ammount." Sups to adress ".$transfer_ad
 
 $options = [
     'destinations' => (object) [
-        'amount' => '1',
-        'address' => $pablo
+        'amount' => $transfer_ammount,
+        'address' => $transfer_address
     ]
 ];
 
