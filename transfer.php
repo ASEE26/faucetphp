@@ -1,12 +1,17 @@
 <?php 
+//Line to display errors in php
 ini_set('display_errors', true);
+
 //Adding Lib for SuperiorCoin Functions
 require "../vendor/autoload.php";
 use Superior\Wallet;
 $walletFaucet = new Superior\Wallet();
 //$balanceFaucet = $walletFaucet->getBalance();
+
+//Test ammount transfer
 $transfer_ammount='1';
-//pablo
+
+//pablo_adress
 $transfer_address= '5NKJdxdiCmccLyw53D8MzUhZYzDDvdBXshrVhUgYSYjyJFk3Wn5bMjsDSCxzSi1d95M83fENY7uEmUm5t2Uj8rGEFXFTQ3q';
 
 echo "<h1>I'm trying to send ".$transfer_ammount." Sups </br> To adress ".$transfer_address."</h1>";
@@ -29,6 +34,8 @@ echo "</br></br></br>";
 
 
 $transfer_result = json_decode($sup_transfer);
+
+//if "code" exist in transfer response
 if(isset($transfer_result->{'code'})){
 	} if (isset($transfer_result->{'fee'})) {
 	echo "</br> <h1>Success Transfer!</h1> </br>";
@@ -37,6 +44,7 @@ if(isset($transfer_result->{'code'})){
 	echo 
 	"Transfer Fee: ".$transfer_fee. 
 	"</br>Transfer Hash: ".$transfer_hash;
+//if "code" not exist in transfer response means that error exists
 } else {
 	$transfer_errorcode = $transfer_result->{'code'};
 	$transfer_errormessage = $transfer_result->{'message'};
